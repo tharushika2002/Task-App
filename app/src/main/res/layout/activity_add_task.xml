@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_margin="15dp"
+    tools:context=".AddTaskActivity">
+
+    <TextView
+        android:id="@+id/TaskTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_task"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"/>
+
+    <ImageView
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_circle_down_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/TaskTopic"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_the_title"
+        android:padding="14dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/TaskTopic"
+        android:background="@drawable/border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/enter_description"
+        android:padding="14dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextDate"
+        android:background="@drawable/border"
+        android:layout_marginTop="12dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/date_hint"
+        android:background="@drawable/border"
+        android:padding="14dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
